@@ -1,22 +1,23 @@
-import { Link } from "react-router-dom";
+import React from 'react';
 import Nav from "./Nav";
 
 export default function Header() {
 return (
-    <header>
-        <menu>
-            <Link to="/">
-                <img
-                    src={require("../assets/nav-logo.png")}
-                    alt="Little Lemon logo"
-                    className="nav-image">
-                </img>
-            </Link>
+    <>
+        <header>
+                <a href="/">
+                    <img
+                        src={require("../assets/nav-logo.png")}
+                        alt="Little Lemon logo"
+                        className="nav-image">
+                    </img>
 
-        <Nav />
-        </menu>
+                </a>
 
-    </header>
+            <Nav />
+
+        </header>
+    </>
 );
 
 }

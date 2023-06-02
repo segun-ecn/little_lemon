@@ -1,8 +1,8 @@
-import { Link } from "react-router-dom";
+import React from 'react';
 export default function Footer() {
   return (
     <footer>
-      <menu>
+      <ul>
         <li className="img-footer">
           <img
             src={require("../assets/footer-logo.png")}
@@ -12,8 +12,8 @@ export default function Footer() {
         <li className="contact">
           <h1 className="footer-header">Navigation</h1>
           <ul className="footer-links">
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
+            <a href='/'>Home</a>
+            <a href="/about">About</a>
             <a
               href={require("../assets/menu.webp")}
               target="_blank"
@@ -21,9 +21,9 @@ export default function Footer() {
             >
               Menu
             </a>
-            <Link to="/reservations">Reservations</Link>
-            <Link to="/order">Order</Link>
-            <Link to="/login">Login</Link>
+            <a href="/reservations">Reservations</a>
+            <a href="/order">Order</a>
+            <a href="/login">Login</a>
           </ul>
         </li>
 
@@ -70,7 +70,7 @@ export default function Footer() {
             </a>
           </ul>
         </li>
-      </menu>
+        </ul>
     </footer>
   );
 }
