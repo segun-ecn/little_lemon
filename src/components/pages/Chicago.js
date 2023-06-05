@@ -1,4 +1,4 @@
-export default function About() {
+export default function Chicago() {
     return (
         <article className="about-us">
             <section className="hero-text">

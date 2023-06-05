@@ -1,22 +1,26 @@
-import MainHeading from "./pages/MainHeading";
+import { Routes, Route } from "react-router-dom";
+import Homepage from "./pages/Homepage";
 import Specials from "./pages/Specials";
-import Testimonials from "./pages/Testimonials";
-import About from "./pages/About";
+import CustomersSay from "./pages/CustomersSay";
+import Chicago from "./pages/Chicago";
+import BookingPage from './pages/BookingPage';
+
 
 export default function Main() {
 return (
 
-    <>
-        <MainHeading />
+    <Routes>
+    <Route path="/" element={<Homepage />} />
 
-        <Specials />
+    <Route path="/Specials" element={<Specials />} />
 
-        <Testimonials />
+    <Route path="/customerssay" element={<CustomersSay />} />
 
-        <About />
+    <Route path="/chicago" element={<Chicago />} />
 
-    
-    </>
+    <Route path="/bookingpage" element={<BookingPage />} />
+
+  </Routes>
 
 
     );
