@@ -27,7 +27,9 @@ export default function BookingForm(props) {
   }
 
   return (
+
     <form className="reservation-form">
+        <h1>Book Now</h1>
       <div>
         <label htmlFor="fName">First Name</label> <br></br>
         <input

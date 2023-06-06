@@ -4,7 +4,7 @@ import Specials from "./pages/Specials";
 import CustomersSay from "./pages/CustomersSay";
 import Chicago from "./pages/Chicago";
 import BookingPage from './pages/BookingPage';
-
+import Confirmation from "./pages/Confirmation";
 
 export default function Main() {
 return (
@@ -12,13 +12,15 @@ return (
     <Routes>
     <Route path="/" element={<Homepage />} />
 
-    <Route path="/Specials" element={<Specials />} />
+    <Route path="/specials" element={<Specials />} />
 
     <Route path="/customerssay" element={<CustomersSay />} />
 
     <Route path="/chicago" element={<Chicago />} />
 
     <Route path="/bookingpage" element={<BookingPage />} />
+
+    <Route path="/confirmation" element={<Confirmation />} />
 
   </Routes>
 
