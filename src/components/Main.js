@@ -10,17 +10,21 @@ export default function Main() {
 return (
 
     <Routes>
-    <Route path="/" element={<Homepage />} />
+      <Route path="/" element={<Homepage />} />  {/*Little Lemon Home Page */}
 
-    <Route path="/specials" element={<Specials />} />
+      <Route path="/specials" element={<Specials />} />   {/*Little Lemon Menu Page */}
 
-    <Route path="/customerssay" element={<CustomersSay />} />
+      <Route path="/customerssay" element={<CustomersSay />} />  {/*Little Lemon Testimonial Page */}
 
-    <Route path="/chicago" element={<Chicago />} />
+      <Route path="/chicago" element={<Chicago />} />   {/*Little Lemon About Page */}
 
-    <Route path="/bookingpage" element={<BookingPage />} />
+      <Route path="/bookingpage" element={<BookingPage />} />  {/*Little Lemon Reservation Page */}
 
-    <Route path="/confirmation" element={<Confirmation />} />
+      <Route path="/confirmation" element={<Confirmation />} />  {/*Little Lemon Confirmation Page */}
+
+      <Route path="/order" element={<orderonline />} />  {/*Little Lemon Order Online Page */}
+
+      <Route path="/login" element={<Confirmation />} />  {/*Little Lemon Login Page */}
 
   </Routes>
 

@@ -1,4 +1,6 @@
-export default function Heading() {
+import React from 'react';
+
+function Heading() {
     return (
         <header>
             <article className="call-to-action">
@@ -18,3 +20,5 @@ export default function Heading() {
       </header>
     );
 }
+
+export default Heading;
